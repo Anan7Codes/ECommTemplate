@@ -25,6 +25,10 @@ const options = {
                     return res.json({ success: false, message: 'Incorrect Password '});
                 }
 
+                if(!users.verified) {
+                    return res.json({ success: false, message: 'Account is not verified'})
+                }
+
                 return { email: users.email }
             }
         })

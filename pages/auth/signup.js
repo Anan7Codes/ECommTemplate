@@ -59,7 +59,7 @@ export default function SignUp() {
                         <form method="POST" action="/api/auth/callback/credentials">
                             <Input placeholder="anan@anan.com" variant="filled" name="username" mb={3} type="email" value={email} onChange={e => setEmail(e.target.value)}/>
                             <Input placeholder="********" variant="filled" name="password" mb={6} type="password" value={password} onChange={e => setPassword(e.target.value)}/>
-                            <Button colorScheme="teal" onClick={SignUpUser}>Log In</Button>
+                            <Button colorScheme="teal" onClick={SignUpUser}>Sign Up</Button>
                         </form>
                     </>
                 }
